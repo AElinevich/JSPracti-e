@@ -8,3 +8,13 @@ if (checkbox.checked) {
     console.log('Не выбран');
 
 }};
+
+function funcTwo() {
+    const radioBtn = document.getElementsByName('r1');
+    for(let i = 0; i < radioBtn.length; i++) {
+        if(radioBtn[i].checked) {
+            console.log('Выбран ' + i + ' элемент');
+        }
+    }
+    
+}
