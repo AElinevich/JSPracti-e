@@ -25,3 +25,10 @@ const sel = document.getElementById('mySelect').selectedIndex;
 const options = document.getElementById('mySelect').options;
 console.log('Выбрана опция ' +options[sel].text);
 }
+
+// RANGE
+function funcFour() {
+    let range = document.getElementById('r2'),
+    i1 = document.getElementById('i1');
+    i1.value = range.value;
+}
