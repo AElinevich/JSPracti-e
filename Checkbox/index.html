@@ -6,12 +6,25 @@
     <title>Document</title>
 </head>
 <body>
+<!--ChECKBOX-->
 <input type="checkbox" id="one" onchange="funcOne()">Пример Checkbox
+<!--RADIO BUTTON-->
 <p>Пример Radio Button</p>
 <input type="radio" name="r1" value="5">0
 <input type="radio" name="r1" value="53">1
 <input type="radio" name="r1" value="535">2
-<button onclick="funcTwo()">Проверить, какой из элементов выбран</button>
+<button onclick="funcTwo()">Проверить, какой из элементов выбран</button><br>
+<!--SELECT-->
+<p>Пример Select</p> 
+<select name="" id="mySelect" onchange="funcThree()">
+    <option value="">Apple</option>
+    <option value="">Orange</option>
+    <option value="">Pinapple</option>
+    <option value="">Banana</option>
+</select>
+
+
+
 <script src="./main.js"></script>
 </body>
 </html>
