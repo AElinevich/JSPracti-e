@@ -132,6 +132,7 @@ window.onclick = function (event) {
     };
 }
 
+
 /*ANIMATION*/
 function myMove() {
     let elem = document.getElementById("myAnimation"),
@@ -233,4 +234,20 @@ function multiply() {
 
     result = num1 * num2;
     document.getElementById('out').innerHTML = result;
+}
+
+// MODAL IMAGE
+let modalTwo = document.getElementById("MyModalImg"),
+img = document.getElementById("MyImg"),
+modalImg = document.getElementById("img1"),
+captionText = document.getElementById("caption");
+
+img.onclick = function () {
+    modalTwo.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+let spanTwo = document.getElementsByClassName("closeModal")[0];
+spanTwo.onclick = function() {
+    modalTwo.style.display = "none";
 }
