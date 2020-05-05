@@ -40,3 +40,8 @@ for (let i=0; i < acc.length; i++) {
 
     })
 }
+
+// Money Converter
+function moneyConverter(valNum) {
+    document.getElementById("outputrub").innerHTML=valNum*2.49;
+}
