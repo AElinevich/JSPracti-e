@@ -21,3 +21,22 @@ btn.addEventListener('click', function move() {
   let popup = document.getElementById('myPopup');
     popup.classList.toggle('show');
   };
+// Accordion
+/*let acc = document.getElementsByClassName("accordion");
+for (let i=0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+
+    }
+}*/
+
+let acc = document.querySelectorAll(".accordion"),
+panel = document.querySelectorAll(".panel");
+for (let i=0; i < acc.length; i++) {
+    acc[i].addEventListener ('click', function() {
+        acc[i].classList.toggle("active");
+        panel[i].classList.toggle("show");
+
+    })
+}
