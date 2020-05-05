@@ -16,3 +16,8 @@ btn.addEventListener('click', function move() {
 
            }    
         })
+  // Popup
+  function myFunc() {
+  let popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
+  };
